@@ -1,0 +1,1055 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<title>Arquitetura Digital do Instituto</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="deck.css">
+<style>deck-stage:not(:defined){visibility:hidden;}</style>
+</head>
+<body>
+
+<deck-stage width="1920" height="1080">
+
+  <!-- ====================== 01 — CAPA ====================== -->
+  <section data-label="Capa">
+    <div class="blob anim-fade ambient-pulse" style="--i:0; width:900px; height:900px; left:-200px; top:-200px; background:radial-gradient(circle, rgba(224,120,86,0.18), transparent 70%);"></div>
+    <div class="blob anim-fade ambient-pulse" style="--i:1; width:700px; height:700px; right:-100px; bottom:-200px; background:radial-gradient(circle, rgba(111,143,168,0.14), transparent 70%);"></div>
+
+    <span class="corner tl anim" style="--i:0;"><span class="dot"></span>RELATÓRIO TÉCNICO</span>
+    <span class="corner tr anim" style="--i:0;">2026 · CONFIDENCIAL</span>
+    <span class="corner bl anim" style="--i:8;">INSTITUTO · ARQUITETURA DIGITAL</span>
+    <span class="corner br anim" style="--i:8;">01 / 32</span>
+
+    <div class="slide-shell">
+      <div class="eyebrow anim" style="--i:1;">Relatório Técnico &amp; Estratégico</div>
+      <h1 class="display anim-reveal" style="--i:2; font-size: 240px;">
+        Arquitetura<br/>
+        <em>Digital</em> do<br/>
+        Instituto.
+      </h1>
+      <div class="spacer"></div>
+      <div class="cover-meta anim" style="--i:6;">
+        <span>DIAGNÓSTICO · PROPOSTA · ROTEIRO</span>
+        <span style="color: var(--coral);">→ 32 SLIDES</span>
+      </div>
+      <div style="height: 32px;"></div>
+      <div class="marquee anim-fade" style="--i:7;">
+        <span class="track">
+          WORDPRESS INSTITUCIONAL <span class="accent">·</span> WORDPRESS LANDING <span class="accent">·</span> MOODLE LMS <span class="accent">·</span> FLUXOS MANUAIS <span class="accent">·</span> FRAGMENTAÇÃO DE DADOS <span class="accent">·</span> MÚLTIPLAS BASES <span class="accent">·</span> CADASTRO MANUAL <span class="accent">·</span> SEM HUB CENTRAL <span class="accent">·</span>
+          WORDPRESS INSTITUCIONAL <span class="accent">·</span> WORDPRESS LANDING <span class="accent">·</span> MOODLE LMS <span class="accent">·</span> FLUXOS MANUAIS <span class="accent">·</span> FRAGMENTAÇÃO DE DADOS <span class="accent">·</span> MÚLTIPLAS BASES <span class="accent">·</span> CADASTRO MANUAL <span class="accent">·</span> SEM HUB CENTRAL <span class="accent">·</span>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== 02 — CONTEXTO GERAL ====================== -->
+  <section data-label="Contexto Geral">
+    <span class="corner tl anim"><span class="dot"></span>01 · CONTEXTO</span>
+    <span class="corner br anim" style="--i:4;">02 / 32</span>
+    <div class="slide-shell">
+      <div class="eyebrow anim" style="--i:0;">Onde Estamos</div>
+      <h2 class="title anim" style="--i:1; max-width: 1500px;">
+        Crescimento desorganizado da<br/>infraestrutura, <em>sem arquitetura central.</em>
+      </h2>
+      <div class="spacer"></div>
+      <div class="grid-3" style="margin-top: 60px;">
+        <div class="card anim" style="--i:3;">
+          <span class="num">01</span>
+          <h3>Profissionais isolados</h3>
+          <p>Diferentes pessoas e fornecedores contratados ao longo do tempo, cada um resolvendo um problema pontual.</p>
+        </div>
+        <div class="card anim" style="--i:4;">
+          <span class="num">02</span>
+          <h3>Soluções sobrepostas</h3>
+          <p>Múltiplos sistemas desempenhando funções parecidas, gerando duplicidade e dependência operacional manual.</p>
+        </div>
+        <div class="card anim" style="--i:5;">
+          <span class="num">03</span>
+          <h3>Sem ownership</h3>
+          <p>Não há definição clara de qual sistema é fonte oficial de cada dado. A operação convive com a fragilidade.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== 03 — ESTRUTURA ATUAL ====================== -->
+  <section data-label="Estrutura Atual">
+    <span class="corner tl anim"><span class="dot"></span>02 · ESTRUTURA ATUAL</span>
+    <span class="corner br anim" style="--i:4;">03 / 32</span>
+    <div class="slide-shell">
+      <div class="eyebrow anim" style="--i:0;">Quatro Sistemas em Paralelo</div>
+      <h2 class="title anim" style="--i:1;">O que existe hoje.</h2>
+      <div class="spacer"></div>
+
+      <div class="grid-4" style="gap: 24px;">
+        <div class="card anim" style="--i:3; min-height: 380px;">
+          <span class="label">— 01</span>
+          <h3>WordPress<br/>Institucional</h3>
+          <p style="margin-top: 18px;">Presença, páginas informativas e comunicação pública.</p>
+        </div>
+        <div class="card anim" style="--i:4; min-height: 380px;">
+          <span class="label">— 02</span>
+          <h3>WordPress<br/>Landing Pages</h3>
+          <p style="margin-top: 18px;">Venda, campanhas comerciais, captação de leads e checkout.</p>
+        </div>
+        <div class="card anim" style="--i:5; min-height: 380px;">
+          <span class="label">— 03</span>
+          <h3>Plataforma<br/>Moodle / LMS</h3>
+          <p style="margin-top: 18px;">Ambiente acadêmico, conteúdo, cursos e progresso do aluno.</p>
+        </div>
+        <div class="card anim" style="--i:6; min-height: 380px; border-color: var(--coral);">
+          <span class="label">— 04</span>
+          <h3>Fluxos<br/>Manuais</h3>
+          <p style="margin-top: 18px;">Cadastro, matrícula e envio de acessos controlados por humanos.</p>
+        </div>
+      </div>
+      <div style="margin-top: 40px;" class="small anim" style="--i:8;">→ Sem coordenação arquitetural · sem fonte única de verdade</div>
+    </div>
+  </section>
+
+  <!-- ====================== 04 — WORDPRESS INSTITUCIONAL ====================== -->
+  <section data-label="WordPress Institucional">
+    <span class="corner tl anim"><span class="dot"></span>02 · ESTRUTURA ATUAL</span>
+    <span class="corner tr anim">SISTEMA 01 / 04</span>
+    <span class="corner br anim" style="--i:4;">04 / 32</span>
+    <div class="slide-shell">
+      <div style="display:grid; grid-template-columns: 1.1fr 1fr; gap: 100px; height: 100%;">
+        <div style="display:flex; flex-direction: column; justify-content: center;">
+          <div class="eyebrow anim" style="--i:0;">Sistema 01</div>
+          <h2 class="title anim" style="--i:1;">
+            WordPress<br/><em>Institucional.</em>
+          </h2>
+          <p class="body anim" style="--i:3; margin-top: 36px;">
+            Responsável pela <em>identidade pública</em> do instituto — o rosto que os visitantes encontram primeiro.
+          </p>
+        </div>
+        <div style="display: flex; flex-direction: column; justify-content: center;">
+          <div class="small anim" style="--i:2; margin-bottom: 32px;">RESPONSÁVEL POR</div>
+          <ul class="list">
+            <li class="anim" style="--i:3;"><span class="idx">01</span><span class="lbl">Presença institucional</span></li>
+            <li class="anim" style="--i:4;"><span class="idx">02</span><span class="lbl">Páginas informativas</span></li>
+            <li class="anim" style="--i:5;"><span class="idx">03</span><span class="lbl">Comunicação pública</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== 05 — WORDPRESS LANDING PAGES ====================== -->
+  <section data-label="WordPress Landing">
+    <span class="corner tl anim"><span class="dot"></span>02 · ESTRUTURA ATUAL</span>
+    <span class="corner tr anim">SISTEMA 02 / 04</span>
+    <span class="corner br anim" style="--i:4;">05 / 32</span>
+    <div class="slide-shell">
+      <div style="display:grid; grid-template-columns: 1.1fr 1fr; gap: 100px; height: 100%;">
+        <div style="display:flex; flex-direction: column; justify-content: center;">
+          <div class="eyebrow anim" style="--i:0;">Sistema 02</div>
+          <h2 class="title anim" style="--i:1;">
+            WordPress de<br/><em>Landing Pages.</em>
+          </h2>
+          <p class="body anim" style="--i:3; margin-top: 36px;">
+            Um segundo WordPress, dedicado à <em>operação comercial</em> — campanhas, conversão e funil de venda.
+          </p>
+        </div>
+        <div style="display: flex; flex-direction: column; justify-content: center;">
+          <div class="small anim" style="--i:2; margin-bottom: 32px;">RESPONSÁVEL POR</div>
+          <ul class="list">
+            <li class="anim" style="--i:3;"><span class="idx">01</span><span class="lbl">Páginas específicas de venda</span></li>
+            <li class="anim" style="--i:4;"><span class="idx">02</span><span class="lbl">Campanhas comerciais</span></li>
+            <li class="anim" style="--i:5;"><span class="idx">03</span><span class="lbl">Captação de leads</span></li>
+            <li class="anim" style="--i:6;"><span class="idx">04</span><span class="lbl">Redirecionamento para compra</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== 06 — MOODLE ====================== -->
+  <section data-label="Moodle">
+    <span class="corner tl anim"><span class="dot"></span>02 · ESTRUTURA ATUAL</span>
+    <span class="corner tr anim">SISTEMA 03 / 04</span>
+    <span class="corner br anim" style="--i:4;">06 / 32</span>
+    <div class="slide-shell">
+      <div style="display:grid; grid-template-columns: 1.1fr 1fr; gap: 100px; height: 100%;">
+        <div style="display:flex; flex-direction: column; justify-content: center;">
+          <div class="eyebrow anim" style="--i:0;">Sistema 03</div>
+          <h2 class="title anim" style="--i:1;">
+            Plataforma<br/><em>Moodle / LMS.</em>
+          </h2>
+          <p class="body anim" style="--i:3; margin-top: 36px;">
+            O <em>ambiente acadêmico</em>. É onde o aluno acessa o curso, mas também onde mora hoje boa parte do banco de usuários.
+          </p>
+        </div>
+        <div style="display: flex; flex-direction: column; justify-content: center;">
+          <div class="small anim" style="--i:2; margin-bottom: 32px;">RESPONSÁVEL POR</div>
+          <ul class="list">
+            <li class="anim" style="--i:3;"><span class="idx">01</span><span class="lbl">Ambiente acadêmico</span></li>
+            <li class="anim" style="--i:4;"><span class="idx">02</span><span class="lbl">Acesso aos cursos</span></li>
+            <li class="anim" style="--i:5;"><span class="idx">03</span><span class="lbl">Conteúdo educacional</span></li>
+            <li class="anim" style="--i:6;"><span class="idx">04</span><span class="lbl">Progresso do aluno</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== 07 — FLUXOS MANUAIS ====================== -->
+  <section data-label="Fluxos Manuais">
+    <span class="corner tl anim"><span class="dot"></span>02 · ESTRUTURA ATUAL</span>
+    <span class="corner tr anim">SISTEMA 04 / 04</span>
+    <span class="corner br anim" style="--i:4;">07 / 32</span>
+    <div class="slide-shell">
+      <div style="display:grid; grid-template-columns: 1.1fr 1fr; gap: 100px; height: 100%;">
+        <div style="display:flex; flex-direction: column; justify-content: center;">
+          <div class="eyebrow anim" style="--i:0; color: var(--red);">Sistema 04 · ponto frágil</div>
+          <h2 class="title anim" style="--i:1;">
+            Fluxos<br/><em>Manuais.</em>
+          </h2>
+          <p class="body anim" style="--i:3; margin-top: 36px;">
+            Após a compra, tudo passa pelas mãos de um operador. Cada etapa <em>depende de uma pessoa</em> ao invés de um sistema.
+          </p>
+        </div>
+        <div style="display: flex; flex-direction: column; justify-content: center;">
+          <div class="small anim" style="--i:2; margin-bottom: 32px;">APÓS A COMPRA</div>
+          <ul class="list">
+            <li class="anim" style="--i:3;"><span class="idx">01</span><span class="lbl">Cadastro manual de alunos</span></li>
+            <li class="anim" style="--i:4;"><span class="idx">02</span><span class="lbl">Matrícula manual</span></li>
+            <li class="anim" style="--i:5;"><span class="idx">03</span><span class="lbl">Envio manual de acessos</span></li>
+            <li class="anim" style="--i:6;"><span class="idx">04</span><span class="lbl">Controle humano de processos</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== 08 — SEÇÃO: PROBLEMAS ====================== -->
+  <section data-label="Seção: Problemas">
+    <div class="blob anim-fade ambient-pulse" style="--i:0; width:1200px; height:1200px; left:30%; top:-300px; background:radial-gradient(circle, rgba(199,106,106,0.16), transparent 60%);"></div>
+    <span class="corner tl anim"><span class="dot"></span>SEÇÃO 02</span>
+    <span class="corner br anim" style="--i:4;">08 / 32</span>
+    <div class="slide-shell section-header">
+      <div class="sect-num anim" style="--i:0;">— Seção 02</div>
+      <div>
+        <h2 class="sect-title anim-reveal" style="--i:2;">
+          Problemas<br/><em>Estruturais.</em>
+        </h2>
+        <div class="small anim" style="--i:6; margin-top: 40px;">FRAGMENTAÇÃO · OPERAÇÃO · COMUNICAÇÃO · MEMBRESIA</div>
+      </div>
+      <div class="cover-meta anim" style="--i:8;">
+        <span>5 PROBLEMAS</span>
+        <span style="color: var(--coral);">→ DIAGNÓSTICO A SEGUIR</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== 09 — FRAGMENTAÇÃO ====================== -->
+  <section data-label="Fragmentação">
+    <span class="corner tl anim"><span class="dot"></span>PROBLEMA 01 / 05</span>
+    <span class="corner br anim" style="--i:4;">09 / 32</span>
+    <div class="slide-shell">
+      <div class="eyebrow anim" style="--i:0;">Fragmentação de Sistemas</div>
+      <h2 class="title anim" style="--i:1;">
+        Cada sistema guarda <em>um pedaço</em><br/>dos dados. Ninguém guarda tudo.
+      </h2>
+
+      <div style="display:grid; grid-template-columns: 1.1fr 1fr; gap: 80px; margin-top: 80px; flex: 1;">
+        <div>
+          <div class="small anim" style="--i:3; margin-bottom: 24px;">DISTRIBUIÇÃO ATUAL DOS DADOS</div>
+          <div style="display:flex; flex-direction:column; gap: 16px;">
+            <div class="anim" style="--i:4; display:flex; align-items:center; gap: 24px; padding: 22px 28px; background: var(--bg-card); border: 1px solid var(--line); border-radius: 4px;">
+              <div style="width: 12px; height: 12px; background: var(--coral); border-radius: 50%;"></div>
+              <div style="flex:1; font-family: var(--font-mono); font-size: 24px;">WordPress Institucional</div>
+              <div style="color: var(--mute); font-family: var(--font-mono); font-size: 24px;">parte dos dados</div>
+            </div>
+            <div class="anim" style="--i:5; display:flex; align-items:center; gap: 24px; padding: 22px 28px; background: var(--bg-card); border: 1px solid var(--line); border-radius: 4px;">
+              <div style="width: 12px; height: 12px; background: var(--slate); border-radius: 50%;"></div>
+              <div style="flex:1; font-family: var(--font-mono); font-size: 24px;">WordPress Comercial</div>
+              <div style="color: var(--mute); font-family: var(--font-mono); font-size: 24px;">outra parte</div>
+            </div>
+            <div class="anim" style="--i:6; display:flex; align-items:center; gap: 24px; padding: 22px 28px; background: var(--bg-card); border: 1px solid var(--line); border-radius: 4px;">
+              <div style="width: 12px; height: 12px; background: var(--green); border-radius: 50%;"></div>
+              <div style="flex:1; font-family: var(--font-mono); font-size: 24px;">Moodle / LMS</div>
+              <div style="color: var(--mute); font-family: var(--font-mono); font-size: 24px;">outra base</div>
+            </div>
+            <div class="anim" style="--i:7; display:flex; align-items:center; gap: 24px; padding: 22px 28px; background: rgba(199,106,106,0.06); border: 1px dashed var(--red); border-radius: 4px;">
+              <div style="width: 12px; height: 12px; background: var(--red); border-radius: 50%;"></div>
+              <div style="flex:1; font-family: var(--font-mono); font-size: 24px; color: var(--red);">Fonte oficial única</div>
+              <div style="color: var(--red); font-family: var(--font-mono); font-size: 24px;">não existe</div>
+            </div>
+          </div>
+        </div>
+        <div style="display:flex; flex-direction: column; justify-content: center;">
+          <div class="small anim" style="--i:5; margin-bottom: 24px;">RESULTADO</div>
+          <ul class="list">
+            <li class="anim" style="--i:6;"><span class="idx">→</span><span class="lbl">Inconsistência de informações</span></li>
+            <li class="anim" style="--i:7;"><span class="idx">→</span><span class="lbl">Retrabalho</span></li>
+            <li class="anim" style="--i:8;"><span class="idx">→</span><span class="lbl">Dificuldade de manutenção</span></li>
+            <li class="anim" style="--i:9;"><span class="idx">→</span><span class="lbl">Processos frágeis</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== 10 — CADASTRO MANUAL ====================== -->
+  <section data-label="Cadastro Manual">
+    <span class="corner tl anim"><span class="dot"></span>PROBLEMA 02 / 05</span>
+    <span class="corner br anim" style="--i:4;">10 / 32</span>
+    <div class="slide-shell">
+      <div class="eyebrow anim" style="--i:0;">Cadastro Manual</div>
+      <h2 class="title anim" style="--i:1;">
+        Quatro <em>operadores humanos</em><br/>entre a compra e o acesso.
+      </h2>
+      <div class="spacer"></div>
+
+      <div class="grid-4">
+        <div class="card anim" style="--i:3;">
+          <span class="num">01</span>
+          <h3>Atraso</h3>
+          <p>Liberação de acesso depende do tempo do operador, não do tempo do cliente.</p>
+        </div>
+        <div class="card anim" style="--i:4;">
+          <span class="num">02</span>
+          <h3>Erro humano</h3>
+          <p>Digitar e-mail errado, esquecer curso, duplicar matrícula — riscos sempre presentes.</p>
+        </div>
+        <div class="card anim" style="--i:5;">
+          <span class="num">03</span>
+          <h3>Dependência</h3>
+          <p>Se a pessoa adoece ou sai de férias, todo o fluxo para.</p>
+        </div>
+        <div class="card anim" style="--i:6;">
+          <span class="num">04</span>
+          <h3>Sem escala</h3>
+          <p>Volume dobrar significa contratar mais gente — não dá para crescer linearmente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== 11 — MÚLTIPLAS BASES ====================== -->
+  <section data-label="Múltiplas Bases">
+    <span class="corner tl anim"><span class="dot"></span>PROBLEMA 03 / 05</span>
+    <span class="corner br anim" style="--i:4;">11 / 32</span>
+    <div class="slide-shell">
+      <div class="eyebrow anim" style="--i:0;">Múltiplas Bases de Usuário</div>
+      <h2 class="title anim" style="--i:1;">
+        A mesma pessoa, <em>cinco vezes,</em><br/>em cinco bancos diferentes.
+      </h2>
+      <div class="spacer"></div>
+
+      <div style="display:grid; grid-template-columns: repeat(5, 1fr); gap: 20px;">
+        <div class="card anim" style="--i:3; text-align:center; padding: 36px 20px;">
+          <div style="font-family: var(--font-serif); font-style:italic; font-size: 88px; color: var(--coral); line-height:1;">01</div>
+          <h3 style="font-size: 32px; margin-top: 18px;">Visitantes</h3>
+        </div>
+        <div class="card anim" style="--i:4; text-align:center; padding: 36px 20px;">
+          <div style="font-family: var(--font-serif); font-style:italic; font-size: 88px; color: var(--coral); line-height:1;">02</div>
+          <h3 style="font-size: 32px; margin-top: 18px;">Leads</h3>
+        </div>
+        <div class="card anim" style="--i:5; text-align:center; padding: 36px 20px;">
+          <div style="font-family: var(--font-serif); font-style:italic; font-size: 88px; color: var(--coral); line-height:1;">03</div>
+          <h3 style="font-size: 32px; margin-top: 18px;">Compradores</h3>
+        </div>
+        <div class="card anim" style="--i:6; text-align:center; padding: 36px 20px;">
+          <div style="font-family: var(--font-serif); font-style:italic; font-size: 88px; color: var(--coral); line-height:1;">04</div>
+          <h3 style="font-size: 32px; margin-top: 18px;">Alunos</h3>
+        </div>
+        <div class="card anim" style="--i:7; text-align:center; padding: 36px 20px;">
+          <div style="font-family: var(--font-serif); font-style:italic; font-size: 88px; color: var(--coral); line-height:1;">05</div>
+          <h3 style="font-size: 32px; margin-top: 18px;">Membros</h3>
+        </div>
+      </div>
+
+      <div style="margin-top: 80px;" class="anim" style="--i:9;">
+        <p class="body" style="font-size: 36px; color: var(--cream);">
+          <em>Sem sincronização consistente</em> entre nenhum desses sistemas.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== 12 — COMUNICAÇÃO DESCENTRALIZADA ====================== -->
+  <section data-label="Comunicação">
+    <span class="corner tl anim"><span class="dot"></span>PROBLEMA 04 / 05</span>
+    <span class="corner br anim" style="--i:4;">12 / 32</span>
+    <div class="slide-shell">
+      <div class="eyebrow anim" style="--i:0;">Comunicação Descentralizada</div>
+      <h2 class="title anim" style="--i:1; max-width: 1500px;">
+        Não existe uma <em>camada única</em> para falar com quem importa.
+      </h2>
+      <div class="spacer"></div>
+
+      <div class="small anim" style="--i:3; margin-bottom: 32px;">SEM CENTRALIZAÇÃO PARA</div>
+      <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+        <div class="anim" style="--i:4; padding: 32px 36px; background: var(--bg-card); border: 1px solid var(--line); border-radius: 4px;">
+          <div style="font-family: var(--font-mono); font-size: 24px; color: var(--coral); letter-spacing: 0.16em;">— 01</div>
+          <div style="font-size: 32px; margin-top: 12px;">Comunicação institucional</div>
+        </div>
+        <div class="anim" style="--i:5; padding: 32px 36px; background: var(--bg-card); border: 1px solid var(--line); border-radius: 4px;">
+          <div style="font-family: var(--font-mono); font-size: 24px; color: var(--coral); letter-spacing: 0.16em;">— 02</div>
+          <div style="font-size: 32px; margin-top: 12px;">Relacionamento com membros</div>
+        </div>
+        <div class="anim" style="--i:6; padding: 32px 36px; background: var(--bg-card); border: 1px solid var(--line); border-radius: 4px;">
+          <div style="font-family: var(--font-mono); font-size: 24px; color: var(--coral); letter-spacing: 0.16em;">— 03</div>
+          <div style="font-size: 32px; margin-top: 12px;">Eventos</div>
+        </div>
+        <div class="anim" style="--i:7; padding: 32px 36px; background: var(--bg-card); border: 1px solid var(--line); border-radius: 4px;">
+          <div style="font-family: var(--font-mono); font-size: 24px; color: var(--coral); letter-spacing: 0.16em;">— 04</div>
+          <div style="font-size: 32px; margin-top: 12px;">Campanhas</div>
+        </div>
+        <div class="anim" style="--i:8; padding: 32px 36px; background: var(--bg-card); border: 1px solid var(--line); border-radius: 4px;">
+          <div style="font-family: var(--font-mono); font-size: 24px; color: var(--coral); letter-spacing: 0.16em;">— 05</div>
+          <div style="font-size: 32px; margin-top: 12px;">Notificações</div>
+        </div>
+        <div class="anim" style="--i:9; padding: 32px 36px; background: var(--bg-card); border: 1px solid var(--line); border-radius: 4px;">
+          <div style="font-family: var(--font-mono); font-size: 24px; color: var(--coral); letter-spacing: 0.16em;">— 06</div>
+          <div style="font-size: 32px; margin-top: 12px;">Automações</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== 13 — MEMBRESIA ====================== -->
+  <section data-label="Membresia">
+    <span class="corner tl anim"><span class="dot"></span>PROBLEMA 05 / 05</span>
+    <span class="corner br anim" style="--i:4;">13 / 32</span>
+    <div class="slide-shell">
+      <div class="eyebrow anim" style="--i:0;">Questão da Membresia</div>
+      <h2 class="title anim" style="--i:1; max-width: 1600px;">
+        <em>Membro não é aluno.</em><br/>E hoje vivem no mesmo lugar.
+      </h2>
+      <div class="spacer"></div>
+
+      <div style="display:grid; grid-template-columns: 1.1fr 1fr; gap: 80px;">
+        <div>
+          <div class="small anim" style="--i:3; margin-bottom: 24px;">UM MEMBRO PRECISA DE</div>
+          <ul class="list">
+            <li class="anim" style="--i:4;"><span class="idx">01</span><span class="lbl">Login próprio</span></li>
+            <li class="anim" style="--i:5;"><span class="idx">02</span><span class="lbl">Área exclusiva</span></li>
+            <li class="anim" style="--i:6;"><span class="idx">03</span><span class="lbl">Envio de credenciais</span></li>
+            <li class="anim" style="--i:7;"><span class="idx">04</span><span class="lbl">Certificado institucional em PDF</span></li>
+            <li class="anim" style="--i:8;"><span class="idx">05</span><span class="lbl">Comunicação contínua</span></li>
+            <li class="anim" style="--i:9;"><span class="idx">06</span><span class="lbl">Atualizações do instituto</span></li>
+            <li class="anim" style="--i:10;"><span class="idx">07</span><span class="lbl">Gestão de benefícios</span></li>
+          </ul>
+        </div>
+        <div style="display:flex; flex-direction: column; justify-content: center;">
+          <div class="small anim" style="--i:5; margin-bottom: 24px; color: var(--red);">MAS A BASE ESTÁ NO LMS</div>
+          <p class="body anim" style="--i:6; font-size: 32px;">
+            Com o banco principal vivendo na plataforma vizinha, fica difícil:
+          </p>
+          <ul class="list" style="margin-top: 16px;">
+            <li class="anim" style="--i:7;"><span class="idx">→</span><span class="lbl">Construir relacionamento institucional</span></li>
+            <li class="anim" style="--i:8;"><span class="idx">→</span><span class="lbl">Ter visão completa do usuário</span></li>
+            <li class="anim" style="--i:9;"><span class="idx">→</span><span class="lbl">Automatizar de forma centralizada</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== 14 — SEÇÃO: DIAGNÓSTICO ====================== -->
+  <section data-label="Seção: Diagnóstico">
+    <div class="blob anim-fade ambient-pulse" style="--i:0; width:1200px; height:1200px; right:-200px; top:-200px; background:radial-gradient(circle, rgba(224,120,86,0.16), transparent 60%);"></div>
+    <span class="corner tl anim"><span class="dot"></span>SEÇÃO 03</span>
+    <span class="corner br anim" style="--i:4;">14 / 32</span>
+    <div class="slide-shell section-header">
+      <div class="sect-num anim" style="--i:0;">— Seção 03</div>
+      <div>
+        <h2 class="sect-title anim-reveal" style="--i:2;">
+          Diagnóstico<br/><em>Arquitetural.</em>
+        </h2>
+        <div class="small anim" style="--i:6; margin-top: 40px;">O QUE REALMENTE ESTÁ ACONTECENDO</div>
+      </div>
+      <div class="cover-meta anim" style="--i:8;">
+        <span>3 LEITURAS</span>
+        <span style="color: var(--coral);">→ A CAUSA REAL</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== 15 — PROBLEMA REAL ====================== -->
+  <section data-label="Problema Real">
+    <span class="corner tl anim"><span class="dot"></span>DIAGNÓSTICO</span>
+    <span class="corner br anim" style="--i:4;">15 / 32</span>
+    <div class="slide-shell">
+      <div class="eyebrow anim" style="--i:0;">O Problema Real</div>
+      <h2 class="title anim" style="--i:1;">
+        O problema <em>não</em> é falta de<br/>integração entre os sistemas.
+      </h2>
+      <div class="spacer"></div>
+
+      <div class="small anim" style="--i:3; margin-bottom: 32px;">O PROBLEMA É TRIPLO</div>
+      <div class="grid-3">
+        <div class="card anim" style="--i:4; min-height: 320px; border-color: var(--coral);">
+          <span class="num">01</span>
+          <h3>Ausência de arquitetura central</h3>
+          <p>Não existe um plano que defina como os sistemas se relacionam — eles só foram empilhados.</p>
+        </div>
+        <div class="card anim" style="--i:5; min-height: 320px; border-color: var(--coral);">
+          <span class="num">02</span>
+          <h3>Ausência de ownership de dados</h3>
+          <p>Nenhum sistema é, oficialmente, o dono de um determinado tipo de informação.</p>
+        </div>
+        <div class="card anim" style="--i:6; min-height: 320px; border-color: var(--coral);">
+          <span class="num">03</span>
+          <h3>Responsabilidades indefinidas</h3>
+          <p>Não há acordo claro do que cada sistema deve fazer — e do que não deve.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== 16 — CAUSA PROVÁVEL ====================== -->
+  <section data-label="Causa Provável">
+    <span class="corner tl anim"><span class="dot"></span>DIAGNÓSTICO</span>
+    <span class="corner br anim" style="--i:4;">16 / 32</span>
+    <div class="slide-shell">
+      <div class="eyebrow anim" style="--i:0;">Causa Provável do Cenário</div>
+      <h2 class="title anim" style="--i:1; max-width: 1600px;">
+        Cada serviço foi contratado para resolver <em>um problema pontual.</em>
+      </h2>
+      <p class="body anim" style="--i:3; margin-top: 32px; font-size: 32px;">Sem coordenação arquitetural central — apenas soluções empilhadas no tempo.</p>
+      <div class="spacer"></div>
+
+      <div class="small anim" style="--i:4; margin-bottom: 24px;">EXEMPLOS DE CONTRATAÇÕES PONTUAIS</div>
+      <div style="display:grid; grid-template-columns: repeat(6, 1fr); gap: 16px;">
+        <div class="anim" style="--i:5; padding: 28px 20px; background: var(--bg-card); border: 1px solid var(--line); text-align: center; font-family: var(--font-mono); font-size: 24px; color: var(--cream-mute);">landing pages</div>
+        <div class="anim" style="--i:6; padding: 28px 20px; background: var(--bg-card); border: 1px solid var(--line); text-align: center; font-family: var(--font-mono); font-size: 24px; color: var(--cream-mute);">vendas</div>
+        <div class="anim" style="--i:7; padding: 28px 20px; background: var(--bg-card); border: 1px solid var(--line); text-align: center; font-family: var(--font-mono); font-size: 24px; color: var(--cream-mute);">Moodle</div>
+        <div class="anim" style="--i:8; padding: 28px 20px; background: var(--bg-card); border: 1px solid var(--line); text-align: center; font-family: var(--font-mono); font-size: 24px; color: var(--cream-mute);">design</div>
+        <div class="anim" style="--i:9; padding: 28px 20px; background: var(--bg-card); border: 1px solid var(--line); text-align: center; font-family: var(--font-mono); font-size: 24px; color: var(--cream-mute);">automações</div>
+        <div class="anim" style="--i:10; padding: 28px 20px; background: var(--bg-card); border: 1px solid var(--line); text-align: center; font-family: var(--font-mono); font-size: 24px; color: var(--cream-mute);">membros</div>
+      </div>
+
+      <div style="margin-top: 56px;" class="small anim" style="--i:11;">→ ISSO GEROU</div>
+      <div style="display:grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 16px;">
+        <div class="anim" style="--i:12; padding: 22px 24px; border: 1px dashed var(--red); font-family: var(--font-mono); font-size: 24px; color: var(--red); text-align: center;">soluções empilhadas</div>
+        <div class="anim" style="--i:13; padding: 22px 24px; border: 1px dashed var(--red); font-family: var(--font-mono); font-size: 24px; color: var(--red); text-align: center;">sobreposição de papéis</div>
+        <div class="anim" style="--i:14; padding: 22px 24px; border: 1px dashed var(--red); font-family: var(--font-mono); font-size: 24px; color: var(--red); text-align: center;">plugins remendando</div>
+        <div class="anim" style="--i:15; padding: 22px 24px; border: 1px dashed var(--red); font-family: var(--font-mono); font-size: 24px; color: var(--red); text-align: center;">complexidade crescente</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== 17 — AVALIAÇÃO ESTRATÉGICA ====================== -->
+  <section data-label="Avaliação Estratégica">
+    <span class="corner tl anim"><span class="dot"></span>DIAGNÓSTICO</span>
+    <span class="corner br anim" style="--i:4;">17 / 32</span>
+    <div class="slide-shell" style="justify-content: center;">
+      <div class="eyebrow anim" style="--i:0;">Avaliação Estratégica</div>
+      <div style="display:grid; grid-template-columns: 1.2fr 1fr; gap: 80px; align-items: center; margin-top: 40px;">
+        <div>
+          <h2 class="quote anim" style="--i:2;">
+            <span class="mark">&ldquo;</span>O sistema atual tende a <em>piorar</em> com o crescimento.<span style="color: var(--coral); margin-left: 8px;">&rdquo;</span>
+          </h2>
+        </div>
+        <div>
+          <div class="small anim" style="--i:5; margin-bottom: 24px;">PORQUE</div>
+          <ul class="list">
+            <li class="anim" style="--i:6;"><span class="idx">01</span><span class="lbl">Cada novo fluxo aumenta a complexidade</span></li>
+            <li class="anim" style="--i:7;"><span class="idx">02</span><span class="lbl">Integrações improvisadas acumulam dívida</span></li>
+            <li class="anim" style="--i:8;"><span class="idx">03</span><span class="lbl">O suporte operacional cresce</span></li>
+            <li class="anim" style="--i:9;"><span class="idx">04</span><span class="lbl">A manutenção fica imprevisível</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== 18 — SEÇÃO: PROPOSTA ====================== -->
+  <section data-label="Seção: Proposta">
+    <div class="blob anim-fade ambient-pulse" style="--i:0; width:1400px; height:1400px; left:-400px; bottom:-400px; background:radial-gradient(circle, rgba(138,168,135,0.14), transparent 60%);"></div>
+    <span class="corner tl anim"><span class="dot"></span>SEÇÃO 04</span>
+    <span class="corner br anim" style="--i:4;">18 / 32</span>
+    <div class="slide-shell section-header">
+      <div class="sect-num anim" style="--i:0;">— Seção 04</div>
+      <div>
+        <h2 class="sect-title anim-reveal" style="--i:2;">
+          Proposta<br/><em>Arquitetural.</em>
+        </h2>
+        <div class="small anim" style="--i:6; margin-top: 40px;">UM HUB CENTRAL · UM LMS ESPECIALIZADO</div>
+      </div>
+      <div class="cover-meta anim" style="--i:8;">
+        <span>RECOMENDAÇÃO</span>
+        <span style="color: var(--coral);">→ WORDPRESS COMO HUB</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== 19 — WP COMO HUB ====================== -->
+  <section data-label="WP como Hub">
+    <span class="corner tl anim"><span class="dot"></span>PROPOSTA</span>
+    <span class="corner br anim" style="--i:4;">19 / 32</span>
+    <div class="slide-shell" style="justify-content: center;">
+      <div class="eyebrow anim" style="--i:0;">A Recomendação Central</div>
+      <h2 class="display anim-reveal" style="--i:2; font-size: 220px;">
+        WordPress como<br/><em>hub central</em><br/>do instituto.
+      </h2>
+      <p class="body anim" style="--i:5; margin-top: 60px; max-width: 1200px; font-size: 34px;">
+        O WordPress deixa de ser apenas o site institucional e passa a ser <em>fonte oficial de identidade, comércio e relacionamento</em>. O LMS continua existindo — apenas com escopo bem definido.
+      </p>
+    </div>
+  </section>
+
+  <!-- ====================== 20 — PAPEL DO WORDPRESS ====================== -->
+  <section data-label="Papel do WordPress">
+    <span class="corner tl anim"><span class="dot"></span>PROPOSTA</span>
+    <span class="corner br anim" style="--i:4;">20 / 32</span>
+    <div class="slide-shell">
+      <div class="eyebrow anim" style="--i:0;">O Papel do WordPress</div>
+      <h2 class="title anim" style="--i:1;">Quatro camadas, <em>uma plataforma.</em></h2>
+      <div class="spacer"></div>
+
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 80px;">
+        <div>
+          <div class="small anim" style="--i:3; margin-bottom: 24px;">PAPÉIS PRINCIPAIS</div>
+          <div style="display:flex; flex-direction:column; gap: 14px;">
+            <div class="anim" style="--i:4; padding: 22px 28px; border-left: 3px solid var(--coral); background: rgba(224,120,86,0.05); font-size: 28px;">Fonte oficial de identidade</div>
+            <div class="anim" style="--i:5; padding: 22px 28px; border-left: 3px solid var(--coral); background: rgba(224,120,86,0.05); font-size: 28px;">Camada comercial</div>
+            <div class="anim" style="--i:6; padding: 22px 28px; border-left: 3px solid var(--coral); background: rgba(224,120,86,0.05); font-size: 28px;">Camada institucional</div>
+            <div class="anim" style="--i:7; padding: 22px 28px; border-left: 3px solid var(--coral); background: rgba(224,120,86,0.05); font-size: 28px;">Núcleo de relacionamento</div>
+          </div>
+        </div>
+        <div>
+          <div class="small anim" style="--i:5; margin-bottom: 24px;">CONCRETAMENTE, RESPONSÁVEL POR</div>
+          <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+            <div class="anim" style="--i:6; padding: 18px 22px; background: var(--bg-card); border: 1px solid var(--line); font-family: var(--font-mono); font-size: 24px;">Site institucional</div>
+            <div class="anim" style="--i:7; padding: 18px 22px; background: var(--bg-card); border: 1px solid var(--line); font-family: var(--font-mono); font-size: 24px;">Landing pages</div>
+            <div class="anim" style="--i:8; padding: 18px 22px; background: var(--bg-card); border: 1px solid var(--line); font-family: var(--font-mono); font-size: 24px;">Checkout</div>
+            <div class="anim" style="--i:9; padding: 18px 22px; background: var(--bg-card); border: 1px solid var(--line); font-family: var(--font-mono); font-size: 24px;">CRM / membership</div>
+            <div class="anim" style="--i:10; padding: 18px 22px; background: var(--bg-card); border: 1px solid var(--line); font-family: var(--font-mono); font-size: 24px;">Automações</div>
+            <div class="anim" style="--i:11; padding: 18px 22px; background: var(--bg-card); border: 1px solid var(--line); font-family: var(--font-mono); font-size: 24px;">Eventos</div>
+            <div class="anim" style="--i:12; padding: 18px 22px; background: var(--bg-card); border: 1px solid var(--line); font-family: var(--font-mono); font-size: 24px;">Comunicação</div>
+            <div class="anim" style="--i:13; padding: 18px 22px; background: var(--bg-card); border: 1px solid var(--line); font-family: var(--font-mono); font-size: 24px;">Gestão de membros</div>
+            <div class="anim" style="--i:14; padding: 18px 22px; background: var(--bg-card); border: 1px solid var(--line); font-family: var(--font-mono); font-size: 24px; grid-column: span 2;">Certificados institucionais</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== 21 — MOODLE COMO ACADÊMICA ====================== -->
+  <section data-label="Moodle Acadêmica">
+    <span class="corner tl anim"><span class="dot"></span>PROPOSTA</span>
+    <span class="corner br anim" style="--i:4;">21 / 32</span>
+    <div class="slide-shell">
+      <div class="eyebrow anim" style="--i:0;">Moodle / LMS</div>
+      <h2 class="title anim" style="--i:1;">
+        E o Moodle? <em>Volta ao seu lugar</em><br/>— só ensinar.
+      </h2>
+      <div class="spacer"></div>
+
+      <div style="display:grid; grid-template-columns: 1.2fr 1fr; gap: 80px; align-items: center;">
+        <div>
+          <p class="body anim" style="--i:3; font-size: 32px;">
+            O LMS deixa de carregar identidade, comércio e relacionamento. Ele faz <em>apenas o que sabe fazer melhor que ninguém</em>: ensino.
+          </p>
+        </div>
+        <div>
+          <div class="small anim" style="--i:4; margin-bottom: 24px;">RESPONSÁVEL APENAS POR</div>
+          <ul class="list">
+            <li class="anim" style="--i:5;"><span class="idx">01</span><span class="lbl">Cursos</span></li>
+            <li class="anim" style="--i:6;"><span class="idx">02</span><span class="lbl">Aulas</span></li>
+            <li class="anim" style="--i:7;"><span class="idx">03</span><span class="lbl">Avaliações</span></li>
+            <li class="anim" style="--i:8;"><span class="idx">04</span><span class="lbl">Progresso</span></li>
+            <li class="anim" style="--i:9;"><span class="idx">05</span><span class="lbl">Certificados acadêmicos</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== 22 — DIAGRAMA ARQUITETURA ====================== -->
+  <section data-label="Diagrama Arquitetura">
+    <span class="corner tl anim"><span class="dot"></span>PROPOSTA · ARQUITETURA</span>
+    <span class="corner br anim" style="--i:4;">22 / 32</span>
+    <div class="slide-shell" style="padding-top: 70px; padding-bottom: 60px;">
+      <div class="eyebrow anim" style="--i:0;">Arquitetura Recomendada</div>
+      <h2 class="title anim" style="--i:1; font-size: 64px;">Como os fluxos passam a se organizar.</h2>
+
+      <div class="arch-diagram" style="flex: 1; margin-top: 32px; position: relative;">
+        <!-- Visitante -->
+        <div style="display:flex; justify-content: center;">
+          <div class="anim-scale" style="--i:3; padding: 14px 36px; border: 1px solid var(--line); border-radius: 999px; font-family: var(--font-mono); font-size: 24px; letter-spacing: 0.12em; color: var(--cream); background: var(--bg-soft);">VISITANTE</div>
+        </div>
+
+        <!-- Flow line down to hub -->
+        <div class="anim-fade" style="--i:4; display:flex; justify-content: center; margin: 8px 0;">
+          <div class="vline" style="height: 50px;"><span class="pulse"></span></div>
+        </div>
+
+        <!-- Hub: WordPress -->
+        <div class="anim-scale" style="--i:5;">
+          <div class="node hub" style="padding: 28px 36px;">
+            <div style="display:flex; align-items: center; justify-content: space-between; margin-bottom: 18px;">
+              <div>
+                <div style="font-family: var(--font-mono); font-size: 24px; color: var(--coral); letter-spacing: 0.16em;">— HUB CENTRAL</div>
+                <div class="h" style="font-size: 36px;">WordPress</div>
+              </div>
+              <div style="font-family: var(--font-serif); font-style: italic; color: var(--coral); font-size: 40px;">Single Source of Truth</div>
+            </div>
+            <div style="display:grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 16px;">
+              <div class="anim" style="--i:6; padding: 14px 16px; background: rgba(224,120,86,0.08); border: 1px solid rgba(224,120,86,0.3); font-family: var(--font-mono); font-size: 24px; color: var(--cream);">Site institucional</div>
+              <div class="anim" style="--i:6; padding: 14px 16px; background: rgba(224,120,86,0.08); border: 1px solid rgba(224,120,86,0.3); font-family: var(--font-mono); font-size: 24px; color: var(--cream);">Landing pages</div>
+              <div class="anim" style="--i:7; padding: 14px 16px; background: rgba(224,120,86,0.08); border: 1px solid rgba(224,120,86,0.3); font-family: var(--font-mono); font-size: 24px; color: var(--cream);">Checkout</div>
+              <div class="anim" style="--i:7; padding: 14px 16px; background: rgba(224,120,86,0.08); border: 1px solid rgba(224,120,86,0.3); font-family: var(--font-mono); font-size: 24px; color: var(--cream);">CRM / Membros</div>
+              <div class="anim" style="--i:8; padding: 14px 16px; background: rgba(224,120,86,0.08); border: 1px solid rgba(224,120,86,0.3); font-family: var(--font-mono); font-size: 24px; color: var(--cream);">Área do membro</div>
+              <div class="anim" style="--i:8; padding: 14px 16px; background: rgba(224,120,86,0.08); border: 1px solid rgba(224,120,86,0.3); font-family: var(--font-mono); font-size: 24px; color: var(--cream);">Automação e-mail</div>
+              <div class="anim" style="--i:9; padding: 14px 16px; background: rgba(224,120,86,0.08); border: 1px solid rgba(224,120,86,0.3); font-family: var(--font-mono); font-size: 24px; color: var(--cream);">Certificados institucionais</div>
+              <div class="anim" style="--i:9; padding: 14px 16px; background: rgba(224,120,86,0.08); border: 1px solid rgba(224,120,86,0.3); font-family: var(--font-mono); font-size: 24px; color: var(--cream);">Eventos &amp; notícias</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Connector down -->
+        <div class="anim-fade" style="--i:10; display:flex; justify-content: center; margin: 4px 0;">
+          <div class="vline" style="height: 36px;"><span class="pulse"></span></div>
+        </div>
+
+        <!-- LMS -->
+        <div class="anim-scale" style="--i:11;">
+          <div class="node lms" style="padding: 22px 36px;">
+            <div style="display:flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+              <div>
+                <div style="font-family: var(--font-mono); font-size: 24px; color: var(--slate); letter-spacing: 0.16em;">— CAMADA ACADÊMICA</div>
+                <div class="h" style="font-size: 30px;">Moodle / LMS</div>
+              </div>
+              <div style="font-family: var(--font-serif); font-style: italic; color: var(--slate); font-size: 32px;">Especializado</div>
+            </div>
+            <div style="display:grid; grid-template-columns: repeat(5, 1fr); gap: 10px;">
+              <div class="anim" style="--i:12; padding: 12px 14px; background: rgba(111,143,168,0.08); border: 1px solid rgba(111,143,168,0.3); font-family: var(--font-mono); font-size: 24px; color: var(--cream); text-align:center;">Cursos</div>
+              <div class="anim" style="--i:12; padding: 12px 14px; background: rgba(111,143,168,0.08); border: 1px solid rgba(111,143,168,0.3); font-family: var(--font-mono); font-size: 24px; color: var(--cream); text-align:center;">Aulas</div>
+              <div class="anim" style="--i:13; padding: 12px 14px; background: rgba(111,143,168,0.08); border: 1px solid rgba(111,143,168,0.3); font-family: var(--font-mono); font-size: 24px; color: var(--cream); text-align:center;">Avaliações</div>
+              <div class="anim" style="--i:13; padding: 12px 14px; background: rgba(111,143,168,0.08); border: 1px solid rgba(111,143,168,0.3); font-family: var(--font-mono); font-size: 24px; color: var(--cream); text-align:center;">Progresso</div>
+              <div class="anim" style="--i:14; padding: 12px 14px; background: rgba(111,143,168,0.08); border: 1px solid rgba(111,143,168,0.3); font-family: var(--font-mono); font-size: 24px; color: var(--cream); text-align:center;">Certif. acad.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== 23 — SEÇÃO: BENEFÍCIOS ====================== -->
+  <section data-label="Seção: Benefícios">
+    <div class="blob anim-fade ambient-pulse" style="--i:0; width:1400px; height:1400px; right:-300px; bottom:-300px; background:radial-gradient(circle, rgba(224,120,86,0.16), transparent 60%);"></div>
+    <span class="corner tl anim"><span class="dot"></span>SEÇÃO 05</span>
+    <span class="corner br anim" style="--i:4;">23 / 32</span>
+    <div class="slide-shell section-header">
+      <div class="sect-num anim" style="--i:0;">— Seção 05</div>
+      <div>
+        <h2 class="sect-title anim-reveal" style="--i:2;">
+          Benefícios da<br/><em>Centralização.</em>
+        </h2>
+        <div class="small anim" style="--i:6; margin-top: 40px;">RELACIONAMENTO · AUTOMAÇÃO · ESCALA · FLEXIBILIDADE</div>
+      </div>
+      <div class="cover-meta anim" style="--i:8;">
+        <span>4 GANHOS</span>
+        <span style="color: var(--coral);">→ O QUE MUDA</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== 24 — RELACIONAMENTO ====================== -->
+  <section data-label="Fonte de Relacionamento">
+    <span class="corner tl anim"><span class="dot"></span>BENEFÍCIO 01 / 04</span>
+    <span class="corner br anim" style="--i:4;">24 / 32</span>
+    <div class="slide-shell">
+      <div class="eyebrow anim" style="--i:0;">Benefício 01</div>
+      <h2 class="title anim" style="--i:1; max-width: 1500px;">
+        Fonte única de <em>relacionamento</em>.
+      </h2>
+      <p class="body anim" style="--i:3; margin-top: 32px; font-size: 32px;">O WordPress passa a conhecer cada pessoa que toca o instituto — e o que ela é, em cada momento.</p>
+      <div class="spacer"></div>
+
+      <div class="small anim" style="--i:4; margin-bottom: 24px;">SABE QUEM É</div>
+      <div style="display:grid; grid-template-columns: repeat(5, 1fr); gap: 16px;">
+        <div class="anim card" style="--i:5; text-align:center; padding: 36px 16px;">
+          <div style="font-family: var(--font-serif); font-style:italic; font-size: 64px; color: var(--coral); line-height: 1;">01</div>
+          <h3 style="font-size: 28px; margin-top: 12px;">Membro</h3>
+        </div>
+        <div class="anim card" style="--i:6; text-align:center; padding: 36px 16px;">
+          <div style="font-family: var(--font-serif); font-style:italic; font-size: 64px; color: var(--coral); line-height: 1;">02</div>
+          <h3 style="font-size: 28px; margin-top: 12px;">Comprador</h3>
+        </div>
+        <div class="anim card" style="--i:7; text-align:center; padding: 36px 16px;">
+          <div style="font-family: var(--font-serif); font-style:italic; font-size: 64px; color: var(--coral); line-height: 1;">03</div>
+          <h3 style="font-size: 28px; margin-top: 12px;">Participante</h3>
+        </div>
+        <div class="anim card" style="--i:8; text-align:center; padding: 36px 16px;">
+          <div style="font-family: var(--font-serif); font-style:italic; font-size: 64px; color: var(--coral); line-height: 1;">04</div>
+          <h3 style="font-size: 28px; margin-top: 12px;">Recebe comunicação</h3>
+        </div>
+        <div class="anim card" style="--i:9; text-align:center; padding: 36px 16px;">
+          <div style="font-family: var(--font-serif); font-style:italic; font-size: 64px; color: var(--coral); line-height: 1;">05</div>
+          <h3 style="font-size: 28px; margin-top: 12px;">Tem benefícios</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== 25 — REDUÇÃO MANUAL ====================== -->
+  <section data-label="Redução Manual">
+    <span class="corner tl anim"><span class="dot"></span>BENEFÍCIO 02 / 04</span>
+    <span class="corner br anim" style="--i:4;">25 / 32</span>
+    <div class="slide-shell">
+      <div class="eyebrow anim" style="--i:0;">Benefício 02</div>
+      <h2 class="title anim" style="--i:1;">
+        Redução de <em>processos manuais.</em>
+      </h2>
+      <div class="spacer"></div>
+
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+        <div>
+          <div class="small anim" style="--i:3; margin-bottom: 24px;">DE → PARA</div>
+          <div style="display:flex; flex-direction: column; gap: 16px;">
+            <div class="anim" style="--i:4; display:flex; gap: 20px; align-items: center;">
+              <span class="tag-old">manual</span>
+              <span style="font-family: var(--font-mono); color: var(--mute); font-size: 24px;">→</span>
+              <span class="tag-new">automático</span>
+              <span style="margin-left: 16px; font-size: 24px;">criação de usuário</span>
+            </div>
+            <div class="anim" style="--i:5; display:flex; gap: 20px; align-items: center;">
+              <span class="tag-old">manual</span>
+              <span style="font-family: var(--font-mono); color: var(--mute); font-size: 24px;">→</span>
+              <span class="tag-new">automático</span>
+              <span style="margin-left: 16px; font-size: 24px;">matrícula</span>
+            </div>
+            <div class="anim" style="--i:6; display:flex; gap: 20px; align-items: center;">
+              <span class="tag-old">manual</span>
+              <span style="font-family: var(--font-mono); color: var(--mute); font-size: 24px;">→</span>
+              <span class="tag-new">automático</span>
+              <span style="margin-left: 16px; font-size: 24px;">envio de login</span>
+            </div>
+            <div class="anim" style="--i:7; display:flex; gap: 20px; align-items: center;">
+              <span class="tag-old">manual</span>
+              <span style="font-family: var(--font-mono); color: var(--mute); font-size: 24px;">→</span>
+              <span class="tag-new">automático</span>
+              <span style="margin-left: 16px; font-size: 24px;">geração de certificados</span>
+            </div>
+            <div class="anim" style="--i:8; display:flex; gap: 20px; align-items: center;">
+              <span class="tag-old">manual</span>
+              <span style="font-family: var(--font-mono); color: var(--mute); font-size: 24px;">→</span>
+              <span class="tag-new">automático</span>
+              <span style="margin-left: 16px; font-size: 24px;">campanhas</span>
+            </div>
+          </div>
+        </div>
+        <div style="text-align: right;">
+          <div class="mega anim" style="--i:6; font-size: 280px; line-height: 0.85;">5<em style="font-size: 0.7em;">×</em></div>
+          <p class="body anim" style="--i:9; font-size: 28px; margin-top: 12px; max-width: 500px; margin-left: auto;">processos hoje feitos por humanos passam a ser <em>executados pelo próprio hub</em>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== 26 — ESCALABILIDADE ====================== -->
+  <section data-label="Escalabilidade">
+    <span class="corner tl anim"><span class="dot"></span>BENEFÍCIO 03 / 04</span>
+    <span class="corner br anim" style="--i:4;">26 / 32</span>
+    <div class="slide-shell">
+      <div class="eyebrow anim" style="--i:0;">Benefício 03</div>
+      <h2 class="title anim" style="--i:1;">
+        A operação <em>deixa de depender</em><br/>do operador humano.
+      </h2>
+      <div class="spacer"></div>
+
+      <div class="small anim" style="--i:3; margin-bottom: 24px;">A OPERAÇÃO DEIXA DE DEPENDER DE</div>
+      <div class="grid-3">
+        <div class="card anim" style="--i:4; min-height: 280px;">
+          <span class="num">01</span>
+          <h3>Cadastros manuais</h3>
+          <p>O sistema cria, vincula e libera acesso sem intervenção humana.</p>
+        </div>
+        <div class="card anim" style="--i:5; min-height: 280px;">
+          <span class="num">02</span>
+          <h3>Operadores humanos</h3>
+          <p>A operação cresce sem precisar contratar gente proporcionalmente.</p>
+        </div>
+        <div class="card anim" style="--i:6; min-height: 280px;">
+          <span class="num">03</span>
+          <h3>Sincronizações improvisadas</h3>
+          <p>Sem mais planilhas de meio-campo, sem mais cópia entre sistemas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== 27 — FLEXIBILIDADE ====================== -->
+  <section data-label="Flexibilidade">
+    <span class="corner tl anim"><span class="dot"></span>BENEFÍCIO 04 / 04</span>
+    <span class="corner br anim" style="--i:4;">27 / 32</span>
+    <div class="slide-shell">
+      <div class="eyebrow anim" style="--i:0;">Benefício 04</div>
+      <h2 class="title anim" style="--i:1; max-width: 1500px;">
+        Se o hub é estável, <em>o resto</em><br/>fica trocável.
+      </h2>
+      <p class="body anim" style="--i:3; margin-top: 32px; font-size: 32px;">Com o WordPress no centro, o ecossistema cresce sem reconstrução total a cada decisão.</p>
+      <div class="spacer"></div>
+
+      <div class="grid-4">
+        <div class="card anim" style="--i:4;">
+          <span class="label">— FUTURO</span>
+          <h3>LMS pode ser trocado</h3>
+          <p>Outra plataforma de cursos? Pluga e desliga sem refazer identidade.</p>
+        </div>
+        <div class="card anim" style="--i:5;">
+          <span class="label">— FUTURO</span>
+          <h3>Integrar novas plataformas</h3>
+          <p>Ferramentas externas conversam com um único hub bem definido.</p>
+        </div>
+        <div class="card anim" style="--i:6;">
+          <span class="label">— FUTURO</span>
+          <h3>Adicionar apps</h3>
+          <p>App mobile, comunidade, eventos próprios — todos usam a mesma base.</p>
+        </div>
+        <div class="card anim" style="--i:7;">
+          <span class="label">— FUTURO</span>
+          <h3>Crescer sem refazer</h3>
+          <p>O ecossistema expande; a fundação permanece.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== 28 — SEÇÃO: ROADMAP ====================== -->
+  <section data-label="Seção: Roadmap">
+    <div class="blob anim-fade ambient-pulse" style="--i:0; width:1200px; height:1200px; left:30%; top:-300px; background:radial-gradient(circle, rgba(111,143,168,0.16), transparent 60%);"></div>
+    <span class="corner tl anim"><span class="dot"></span>SEÇÃO 06</span>
+    <span class="corner br anim" style="--i:4;">28 / 32</span>
+    <div class="slide-shell section-header">
+      <div class="sect-num anim" style="--i:0;">— Seção 06</div>
+      <div>
+        <h2 class="sect-title anim-reveal" style="--i:2;">
+          Recomendações<br/><em>Técnicas.</em>
+        </h2>
+        <div class="small anim" style="--i:6; margin-top: 40px;">CURTO · MÉDIO · LONGO PRAZO</div>
+      </div>
+      <div class="cover-meta anim" style="--i:8;">
+        <span>ROTEIRO</span>
+        <span style="color: var(--coral);">→ POR ONDE COMEÇAR</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== 29 — CURTO PRAZO ====================== -->
+  <section data-label="Curto Prazo">
+    <span class="corner tl anim"><span class="dot"></span>ROADMAP · HORIZONTE 01</span>
+    <span class="corner br anim" style="--i:4;">29 / 32</span>
+    <div class="slide-shell">
+      <div style="display:flex; align-items: baseline; gap: 32px;">
+        <div class="eyebrow anim" style="--i:0;">Horizonte 01</div>
+        <div class="anim" style="--i:1; font-family: var(--font-mono); font-size: 24px; letter-spacing: 0.16em; color: var(--mute);">— ESTABILIZAR</div>
+      </div>
+      <h2 class="title anim" style="--i:2;">Curto Prazo.</h2>
+      <div class="spacer"></div>
+
+      <ul class="list" style="max-width: 1400px;">
+        <li class="anim" style="--i:4; font-size: 40px; padding: 28px 0;"><span class="idx" style="font-size: 24px;">01</span><span class="lbl">Mapear todos os fluxos atuais</span><span class="meta">DESCOBERTA</span></li>
+        <li class="anim" style="--i:5; font-size: 40px; padding: 28px 0;"><span class="idx" style="font-size: 24px;">02</span><span class="lbl">Identificar todos os pontos manuais</span><span class="meta">DIAGNÓSTICO</span></li>
+        <li class="anim" style="--i:6; font-size: 40px; padding: 28px 0;"><span class="idx" style="font-size: 24px;">03</span><span class="lbl">Automatizar a matrícula</span><span class="meta">PRIORIDADE</span></li>
+        <li class="anim" style="--i:7; font-size: 40px; padding: 28px 0;"><span class="idx" style="font-size: 24px;">04</span><span class="lbl">Centralizar autenticação</span><span class="meta">SSO</span></li>
+        <li class="anim" style="--i:8; font-size: 40px; padding: 28px 0;"><span class="idx" style="font-size: 24px;">05</span><span class="lbl">Reduzir duplicidade entre bases</span><span class="meta">LIMPEZA</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ====================== 30 — MÉDIO PRAZO ====================== -->
+  <section data-label="Médio Prazo">
+    <span class="corner tl anim"><span class="dot"></span>ROADMAP · HORIZONTE 02</span>
+    <span class="corner br anim" style="--i:4;">30 / 32</span>
+    <div class="slide-shell">
+      <div style="display:flex; align-items: baseline; gap: 32px;">
+        <div class="eyebrow anim" style="--i:0;">Horizonte 02</div>
+        <div class="anim" style="--i:1; font-family: var(--font-mono); font-size: 24px; letter-spacing: 0.16em; color: var(--mute);">— UNIFICAR</div>
+      </div>
+      <h2 class="title anim" style="--i:2;">Médio Prazo.</h2>
+      <div class="spacer"></div>
+
+      <ul class="list" style="max-width: 1400px;">
+        <li class="anim" style="--i:4; font-size: 40px; padding: 28px 0;"><span class="idx" style="font-size: 24px;">01</span><span class="lbl">Unificar os dois WordPress em um</span><span class="meta">CONSOLIDAÇÃO</span></li>
+        <li class="anim" style="--i:5; font-size: 40px; padding: 28px 0;"><span class="idx" style="font-size: 24px;">02</span><span class="lbl">Implementar sistema de membership adequado</span><span class="meta">MEMBROS</span></li>
+        <li class="anim" style="--i:6; font-size: 40px; padding: 28px 0;"><span class="idx" style="font-size: 24px;">03</span><span class="lbl">Estruturar CRM e camada de comunicação</span><span class="meta">RELACIONAMENTO</span></li>
+        <li class="anim" style="--i:7; font-size: 40px; padding: 28px 0;"><span class="idx" style="font-size: 24px;">04</span><span class="lbl">Criar integração consistente com o LMS</span><span class="meta">PONTE</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ====================== 31 — LONGO PRAZO ====================== -->
+  <section data-label="Longo Prazo">
+    <span class="corner tl anim"><span class="dot"></span>ROADMAP · HORIZONTE 03</span>
+    <span class="corner br anim" style="--i:4;">31 / 32</span>
+    <div class="slide-shell">
+      <div style="display:flex; align-items: baseline; gap: 32px;">
+        <div class="eyebrow anim" style="--i:0;">Horizonte 03</div>
+        <div class="anim" style="--i:1; font-family: var(--font-mono); font-size: 24px; letter-spacing: 0.16em; color: var(--mute);">— EVOLUIR</div>
+      </div>
+      <h2 class="title anim" style="--i:2;">Longo Prazo.</h2>
+      <p class="body anim" style="--i:3; margin-top: 24px; font-size: 32px;">Decisões abertas, a serem reavaliadas conforme o hub se consolida.</p>
+      <div class="spacer"></div>
+
+      <div class="grid-4">
+        <div class="card anim" style="--i:4; min-height: 320px;">
+          <span class="label">— AVALIAR</span>
+          <h3>Permanência do Moodle</h3>
+          <p>Vale manter como LMS? Ou outra ferramenta atende melhor?</p>
+        </div>
+        <div class="card anim" style="--i:5; min-height: 320px;">
+          <span class="label">— AVALIAR</span>
+          <h3>LMS integrado ao WP</h3>
+          <p>Migrar para um LMS nativo dentro do hub, reduzindo a ponte.</p>
+        </div>
+        <div class="card anim" style="--i:6; min-height: 320px;">
+          <span class="label">— AVALIAR</span>
+          <h3>Plataforma própria</h3>
+          <p>Construir uma camada específica do instituto, no momento certo.</p>
+        </div>
+        <div class="card anim" style="--i:7; min-height: 320px;">
+          <span class="label">— AVALIAR</span>
+          <h3>Ecossistema unificado</h3>
+          <p>App, comunidade, eventos — todos amarrados ao mesmo núcleo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== 32 — CONCLUSÃO ====================== -->
+  <section data-label="Conclusão">
+    <div class="blob anim-fade ambient-pulse" style="--i:0; width:1200px; height:1200px; left:-200px; top:-200px; background:radial-gradient(circle, rgba(224,120,86,0.18), transparent 70%);"></div>
+    <div class="blob anim-fade ambient-pulse" style="--i:1; width:1000px; height:1000px; right:-200px; bottom:-200px; background:radial-gradient(circle, rgba(138,168,135,0.12), transparent 70%);"></div>
+
+    <span class="corner tl anim"><span class="dot"></span>CONCLUSÃO</span>
+    <span class="corner br anim" style="--i:4;">32 / 32</span>
+
+    <div class="slide-shell" style="justify-content: center;">
+      <div class="eyebrow anim" style="--i:0;">Conclusão</div>
+      <h2 class="display anim-reveal" style="--i:2; font-size: 180px; line-height: 0.88;">
+        Não é problema<br/>técnico —<br/><em>é de arquitetura</em><br/>de negócio.
+      </h2>
+      <div style="height: 60px;"></div>
+      <p class="body anim" style="--i:6; max-width: 1300px; font-size: 32px;">
+        Transformar o WordPress no <em>núcleo</em> do instituto — concentrando identidade, vendas, membership e comunicação — enquanto o Moodle continua como ambiente acadêmico especializado.
+      </p>
+      <div style="height: 48px;"></div>
+      <div class="anim" style="--i:8; display:flex; gap: 16px; flex-wrap: wrap;">
+        <span class="tag-new" style="font-size: 24px; padding: 12px 24px;">reduz complexidade</span>
+        <span class="tag-new" style="font-size: 24px; padding: 12px 24px;">elimina manual</span>
+        <span class="tag-new" style="font-size: 24px; padding: 12px 24px;">melhora escala</span>
+        <span class="tag-new" style="font-size: 24px; padding: 12px 24px;">reduz dívida técnica</span>
+        <span class="tag-new" style="font-size: 24px; padding: 12px 24px;">operação sustentável</span>
+      </div>
+    </div>
+  </section>
+
+</deck-stage>
+
+<script src="deck-stage.js"></script>
+<script src="deck-anim.js"></script>
+
+</body>
+</html>
